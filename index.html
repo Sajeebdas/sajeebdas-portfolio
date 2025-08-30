@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sajeeb Das — Portfolio</title>
+  <meta name="description" content="Portfolio of Sajeeb Das — Australian Business Development Agent & Digital Marketer">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#0f172a;
+      --muted:#94a3b8;
+      --text:#e2e8f0;
+      --accent:#7c3aed;
+      --accent2:#06b6d4;
+      --ring: rgba(124,58,237,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:radial-gradient(1000px 600px at 20% -10%, rgba(124,58,237,.15), transparent 60%), radial-gradient(1000px 600px at 120% 10%, rgba(6,182,212,.12), transparent 60%), var(--bg); color:var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0}
+    .nav .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.2px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid rgba(148,163,184,.25);border-radius:999px;background:rgba(15,23,42,.6);backdrop-filter: blur(6px);font-size:12px;color:var(--muted)}
+    .hero{display:grid;grid-template-columns: 1.2fr .8fr;gap:24px;align-items:center;padding:32px 0}
+    .hero .card{background:linear-gradient(180deg, rgba(124,58,237,.08), rgba(6,182,212,.08)); border:1px solid rgba(148,163,184,.2); border-radius:24px; padding:28px; box-shadow: 0 10px 40px rgba(0,0,0,.35);}
+    h1{font-size:44px; line-height:1.05; margin:0 0 10px; letter-spacing:-.02em}
+    .sub{color:var(--muted); font-size:16px}
+    .cta{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:12px;border:1px solid transparent; font-weight:600; cursor:pointer}
+    .btn.primary{background:linear-gradient(90deg, var(--accent), var(--accent2)); color:white; box-shadow: 0 10px 30px var(--ring)}
+    .btn.ghost{border-color:rgba(148,163,184,.25); background:rgba(15,23,42,.6); color:var(--text)}
+    .avatar{width:100%; background:linear-gradient(180deg, rgba(124,58,237,.2), rgba(6,182,212,.2)); border:1px solid rgba(148,163,184,.25); border-radius:24px; display:flex; align-items:center; justify-content:center; padding:24px}
+    .grid{display:grid; gap:16px}
+    .cards{grid-template-columns: repeat(12, 1fr)}
+    .card{background:var(--card); border:1px solid rgba(148,163,184,.2); border-radius:20px; padding:20px}
+    .tag{font-size:12px;color:var(--muted)}
+    h3{margin:8px 0 6px}
+    .timeline{display:flex; flex-direction:column; gap:12px}
+    .item{display:flex; gap:14px}
+    .dot{width:10px;height:10px;border-radius:999px;margin-top:9px;background:linear-gradient(90deg, var(--accent), var(--accent2))}
+    .item .content{flex:1}
+    .skills{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{padding:8px 10px; border:1px solid rgba(148,163,184,.2); border-radius:999px; font-size:13px; color:#cbd5e1; background:rgba(15,23,42,.65)}
+    .footer{margin:40px 0 20px; color:var(--muted); font-size:14px; text-align:center}
+    @media (max-width:900px){
+      .hero{grid-template-columns: 1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <img src="assets/avatar.svg" alt="Avatar" width="36" height="36" />
+        <span>Sajeeb Das</span>
+      </div>
+      <div class="pill">Australian Business Development • Digital Marketing • Tech</div>
+    </div>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Australian Business Development Agent &<br> Digital Marketer</h1>
+        <p class="sub">
+          I help businesses grow through qualified lead generation, client relationship building, and data‑driven marketing.
+          Experienced in international sales (AU), CRM, SEO/SEM, and analytics.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:sajeeb100700@gmail.com">Hire Me</a>
+          <a class="btn ghost" href="#work">See Experience</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="avatar">
+        <img src="assets/avatar.svg" alt="Profile graphic" width="280" height="280" />
+      </div>
+    </section>
+
+    <section id="work" class="grid cards">
+      <div class="card" style="grid-column: span 7;">
+        <div class="tag">Current Role</div>
+        <h3>Sr. Executive Operations B2B (Australian Business Development)</h3>
+        <div class="tag">Sky Tech Solutions BPO Ltd — Feb 2025 – Present</div>
+        <ul>
+          <li>Qualify inbound & outbound leads, run follow‑ups, and maintain a high‑quality pipeline.</li>
+          <li>Coordinate credit analysis, prepare proposals, and support decision‑making for AU clients.</li>
+          <li>Collaborate across teams to improve conversion and client experience.</li>
+          <li>Own CRM hygiene, reporting, and weekly performance insights.</li>
+        </ul>
+      </div>
+      <div class="card" style="grid-column: span 5;">
+        <div class="tag">Recent</div>
+        <h3>Digital Marketing Executive</h3>
+        <div class="tag">Tahmid IT Park — Oct 2024 – Jan 2025</div>
+        <ul>
+          <li>Managed Facebook Ads and Marketplace lead gen.</li>
+          <li>Handled SEO/SEM optimization and Google Analytics tracking.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="grid-column: span 12;">
+        <div class="tag">Highlights</div>
+        <div class="skills">
+          <div class="chip">International Cold Calling (AU)</div>
+          <div class="chip">Lead Qualification</div>
+          <div class="chip">Negotiation</div>
+          <div class="chip">Client Relationship</div>
+          <div class="chip">CRM Management</div>
+          <div class="chip">Sales Reporting</div>
+          <div class="chip">SEO/SEM</div>
+          <div class="chip">Google Analytics</div>
+          <div class="chip">Meta Ads</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid cards" style="margin-top:16px">
+      <div class="card" style="grid-column: span 6;">
+        <div class="tag">Education</div>
+        <div class="timeline">
+          <div class="item">
+            <div class="dot"></div>
+            <div class="content">
+              <strong>Diploma in Engineering (Data Telecom & Networking)</strong><br>
+              Feni Computer Institute — BTEB • CGPA 3.54 • 2020–2024
+            </div>
+          </div>
+          <div class="item">
+            <div class="dot"></div>
+            <div class="content">
+              <strong>B.Sc. in CSE</strong><br>
+              Northern University of Bangladesh — 2025–2029 (Continuing)
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="grid-column: span 6;">
+        <div class="tag">Certifications</div>
+        <ul>
+          <li>Oracle Certified Associate Developer & DBA — IBCS‑PRIMAX (2024)</li>
+          <li>Professional Microsoft Office Management — Friends Technology & CAD Institute (2020)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid cards" style="margin-top:16px">
+      <div class="card" style="grid-column: span 12;">
+        <div class="tag">Tech & Tools</div>
+        <div class="skills">
+          <div class="chip">Oracle 19c (Basics)</div>
+          <div class="chip">Database Backup & Recovery</div>
+          <div class="chip">HTML • CSS • JS</div>
+          <div class="chip">Windows & Linux</div>
+          <div class="chip">Google Analytics</div>
+          <div class="chip">Meta Business Suite</div>
+          <div class="chip">Canva</div>
+          <div class="chip">MS Office</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="grid cards" style="margin-top:16px">
+      <div class="card" style="grid-column: span 12;">
+        <div class="tag">Contact</div>
+        <p>
+          <strong>Phone:</strong> <a href="tel:+8801843730705">+880 1843-730705</a><br>
+          <strong>Email:</strong> <a href="mailto:sajeeb100700@gmail.com">sajeeb100700@gmail.com</a><br>
+          <strong>Location:</strong> Uttara, Dhaka
+        </p>
+        <p class="sub">Add your social links by editing this file (GitHub, LinkedIn, Facebook, etc.).</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="y"></span> Sajeeb Das • Built with HTML/CSS • Hosted free
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
